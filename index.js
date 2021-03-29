@@ -61,6 +61,4 @@ client.connect(err => {
 });
 
 
-app.listen(port,()=>{
-    console.log('We are working in', port);
-});
+app.listen(process.env.PORT ||  port)
